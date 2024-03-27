@@ -117,6 +117,8 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBlue
         setupUI()
+        
+        print("leson 1 branch")
     }
     
     private func setupUI() {
