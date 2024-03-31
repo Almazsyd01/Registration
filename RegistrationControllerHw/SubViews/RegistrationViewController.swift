@@ -108,7 +108,7 @@ class SecondViewController: UIViewController {
         view.setTitle("Sing In", for: .normal)
         view.tintColor = .white
         view.layer.cornerRadius = 20
-        //        view.addTarget(self, action: #selector(showSecondView), for: .touchUpInside)
+        view.addTarget(self, action: #selector(showCheck), for: .touchUpInside)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -246,7 +246,7 @@ class SecondViewController: UIViewController {
             ])
     }
     
-    @objc func result (_ sender: UIButton) {
+    @objc func showCheck (_ sender: UIButton) {
         guard let text1 = nameTf.text, !text1.isEmpty else {
             if let text = nameTf.text, text.count < 1 {
                 nameTf.placeholder = "Enter your Email"
@@ -294,7 +294,14 @@ class SecondViewController: UIViewController {
         }
         
         if passwordText == confilmPasswordText {
-            let vc = Succes()
+            let vc = CheckViewController()
+            vc.number = numberTf.text!
+            navigationController?.pushViewController(vc, animated: true)
+        } else {
+            passwordTf.placeholder = "Error"
+            passwordTf.layer.borderColor = UIColor.red.cgColor
+            passwordTf.layer.borderWidth = 2
         }
-    }
+        }
 }
+

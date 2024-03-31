@@ -8,25 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		04643A0A2BB456A6007F5114 /* ChekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04643A092BB456A6007F5114 /* ChekView.swift */; };
+		04643A112BB84591007F5114 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04643A102BB84591007F5114 /* CheckViewController.swift */; };
+		04643A132BBA06ED007F5114 /* SuccesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04643A122BBA06ED007F5114 /* SuccesViewController.swift */; };
 		04AB18C32BACA1DC00685B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB18C22BACA1DC00685B2F /* AppDelegate.swift */; };
 		04AB18C52BACA1DC00685B2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB18C42BACA1DC00685B2F /* SceneDelegate.swift */; };
-		04AB18C72BACA1DC00685B2F /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB18C62BACA1DC00685B2F /* RegistrationController.swift */; };
+		04AB18C72BACA1DC00685B2F /* IntroRegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB18C62BACA1DC00685B2F /* IntroRegistrationController.swift */; };
 		04AB18CC2BACA1DD00685B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AB18CB2BACA1DD00685B2F /* Assets.xcassets */; };
 		04AB18CF2BACA1DD00685B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AB18CD2BACA1DD00685B2F /* LaunchScreen.storyboard */; };
-		04AB18D92BACA68600685B2F /* SuccesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB18D82BACA68600685B2F /* SuccesController.swift */; };
+		04AB18D92BACA68600685B2F /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB18D82BACA68600685B2F /* RegistrationViewController.swift */; };
 		04E126652BB09AED00154339 /* MakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E126642BB09AED00154339 /* MakerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04643A092BB456A6007F5114 /* ChekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChekView.swift; sourceTree = "<group>"; };
+		04643A102BB84591007F5114 /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
+		04643A122BBA06ED007F5114 /* SuccesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesViewController.swift; sourceTree = "<group>"; };
 		04AB18BF2BACA1DC00685B2F /* RegistrationControllerHw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegistrationControllerHw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AB18C22BACA1DC00685B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04AB18C42BACA1DC00685B2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04AB18C62BACA1DC00685B2F /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		04AB18C62BACA1DC00685B2F /* IntroRegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroRegistrationController.swift; sourceTree = "<group>"; };
 		04AB18CB2BACA1DD00685B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04AB18CE2BACA1DD00685B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04AB18D02BACA1DD00685B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04AB18D82BACA68600685B2F /* SuccesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesController.swift; sourceTree = "<group>"; };
+		04AB18D82BACA68600685B2F /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		04E126642BB09AED00154339 /* MakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,8 +94,10 @@
 		04E126622BB0943000154339 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
-				04AB18C62BACA1DC00685B2F /* RegistrationController.swift */,
-				04AB18D82BACA68600685B2F /* SuccesController.swift */,
+				04AB18C62BACA1DC00685B2F /* IntroRegistrationController.swift */,
+				04AB18D82BACA68600685B2F /* RegistrationViewController.swift */,
+				04643A102BB84591007F5114 /* CheckViewController.swift */,
+				04643A122BBA06ED007F5114 /* SuccesViewController.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -176,9 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04E126652BB09AED00154339 /* MakerView.swift in Sources */,
-				04AB18D92BACA68600685B2F /* SuccesController.swift in Sources */,
-				04AB18C72BACA1DC00685B2F /* RegistrationController.swift in Sources */,
+				04AB18D92BACA68600685B2F /* RegistrationViewController.swift in Sources */,
+				04643A132BBA06ED007F5114 /* SuccesViewController.swift in Sources */,
+				04AB18C72BACA1DC00685B2F /* IntroRegistrationController.swift in Sources */,
 				04AB18C32BACA1DC00685B2F /* AppDelegate.swift in Sources */,
+				04643A112BB84591007F5114 /* CheckViewController.swift in Sources */,
 				04AB18C52BACA1DC00685B2F /* SceneDelegate.swift in Sources */,
 				04643A0A2BB456A6007F5114 /* ChekView.swift in Sources */,
 			);

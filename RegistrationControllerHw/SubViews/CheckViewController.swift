@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SuccesViewController: UIViewController {
+class CheckViewController: UIViewController {
     
     private let lockImage: UIImageView = {
         let view = UIImageView()
@@ -62,7 +62,7 @@ class SuccesViewController: UIViewController {
         view.setTitle("Submit", for: .normal)
         view.tintColor = .white
         view.layer.cornerRadius = 20
-        //        view.addTarget(self, action: #selector(), for: .touchUpInside)
+        view.addTarget(self, action: #selector(showSucces), for: .touchUpInside)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -158,7 +158,7 @@ class SuccesViewController: UIViewController {
             return
         }
         
-        let vc = 
+        let vc = SuccesViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
-    
 }
