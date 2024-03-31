@@ -246,28 +246,55 @@ class SecondViewController: UIViewController {
             ])
     }
     
-//    @objc func result (_ sender: UIButton) {
-//        guard let text1 = nameTf.text,
-//              let text2 = numberTf.text,
-//              let text3 = emailTf.text,
-//              let text4 = userNmTf.text,
-//              let text5 = passwordTf.text,
-//              let text6 = confilmPasswordTf.text,
-//              text5 == text6 else {
-//            return
-//        }
-//        
-//        
-//        
-//    }
-//    
-//    func validateTF(tf: UITextField, error: String, borderColor: CGColor, borderWidth: Int) {
-//        
-//        tf.placeholder = error
-//        tf.layer.borderColor = borderColor
-//        tf.layer.borderWidth = CGFloat (borderWidth)
-//        
-//        return
-//    }
-    
+    @objc func result (_ sender: UIButton) {
+        guard let text1 = nameTf.text, !text1.isEmpty else {
+            if let text = nameTf.text, text.count < 1 {
+                nameTf.placeholder = "Enter your Email"
+                nameTf.layer.borderColor = UIColor.red.cgColor
+                nameTf.layer.borderWidth = 2
+                return
+            }
+            
+            return
+        }
+        
+        guard let numberText = numberTf.text, numberText.count >= 1 else {
+            numberTf.placeholder = "Enter your Email"
+            numberTf.layer.borderColor = UIColor.red.cgColor
+            numberTf.layer.borderWidth = 2
+            return
+        }
+        
+        guard let emailText = emailTf.text, emailText.count >= 1  else {
+            emailTf.placeholder = "Enter your Email"
+            emailTf.layer.borderColor = UIColor.red.cgColor
+            emailTf.layer.borderWidth = 2
+            return
+        }
+        
+        guard let usernNameText = userNmTf.text, usernNameText.count >= 1 else {
+            userNmTf.placeholder = "Enter your Email"
+            userNmTf.layer.borderColor = UIColor.red.cgColor
+            userNmTf.layer.borderWidth = 2
+            return
+        }
+        
+        guard let passwordText = passwordTf.text, passwordText.count >= 1 else {
+            passwordTf.placeholder = "Enter your Email"
+            passwordTf.layer.borderColor = UIColor.red.cgColor
+            passwordTf.layer.borderWidth = 2
+            return
+        }
+        
+        guard let confilmPasswordText = confilmPasswordTf.text, confilmPasswordText.count >= 1 else {
+            confilmPasswordTf.placeholder = "Enter your Email"
+            confilmPasswordTf.layer.borderColor = UIColor.red.cgColor
+            confilmPasswordTf.layer.borderWidth = 2
+            return
+        }
+        
+        if passwordText == confilmPasswordText {
+            let vc = Succes()
+        }
+    }
 }
