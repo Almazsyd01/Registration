@@ -11,7 +11,7 @@ class CheckViewController: UIViewController {
     
     private let lockImage: UIImageView = {
         let view = UIImageView()
-        view.image = UIImage(resource: .lock)
+        view.image = UIImage(named: "lock")
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()

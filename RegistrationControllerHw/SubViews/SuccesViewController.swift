@@ -11,7 +11,7 @@ class SuccesViewController: UIViewController {
 
     private let imageSucces: UIImageView = {
         let view = UIImageView()
-        view.image = UIImage(resource: .success)
+        view.image = UIImage(named: "success")
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()

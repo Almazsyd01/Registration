@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     private let imagechild: UIImageView = {
         let view = UIImageView()
-        view.image = UIImage(resource: .child)
+        view.image = UIImage(named: "child")
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
